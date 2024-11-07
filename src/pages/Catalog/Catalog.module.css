@@ -1,0 +1,7 @@
+.catalogSection {
+  padding-top: 48px;
+}
+.wrapper {
+  display: flex;
+  gap: 64px;
+}

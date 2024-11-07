@@ -1,0 +1,49 @@
+.tabsContainer {
+  width: 100%;
+}
+.tabContent {
+  display: flex;
+  gap: 40px;
+}
+.tabsHeader {
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 45px;
+}
+
+.tabButton {
+  padding-bottom: 24px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #101828;
+  margin-bottom: -3px;
+}
+
+.tabButton:hover {
+  color: #333;
+}
+
+.activeTab {
+  color: #000;
+  font-weight: bold;
+}
+
+.activeTab::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #e44848; /* Колір смужки */
+}

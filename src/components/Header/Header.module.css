@@ -1,0 +1,14 @@
+.header {
+  background-color: #f7f7f7;
+}
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 450px;
+  border-bottom: 1px solid #f2f4f7;
+  padding: 24px 0;
+  width: 1440px;
+  height: 72px;
+}

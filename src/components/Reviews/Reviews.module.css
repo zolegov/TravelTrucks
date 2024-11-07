@@ -1,0 +1,60 @@
+.reviewsWrapper {
+  width: 631px;
+}
+.bookCamperWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  width: 641px;
+  padding: 44px 57px;
+}
+.reviewsList {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.reviewsListItemText {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475467;
+}
+.reviewsListItemName {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+
+.firstLetterBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  background: #f2f4f7;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #e44848;
+}
+.reviewsNameWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+  margin-bottom: 4px;
+}
+.reviewsStars {
+  display: flex;
+  gap: 4px;
+}

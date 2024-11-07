@@ -1,0 +1,94 @@
+.catalogContentList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.catalogContentListItem {
+  width: 888px;
+  display: flex;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid #dadde1;
+  gap: 24px;
+}
+.catalogContentListItem img {
+  display: block;
+  max-width: 292px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.catalogContentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+._InfoWrapper {
+  flex-direction: column;
+}
+._InfoWrapper,
+._InfoTitle {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #101828;
+  letter-spacing: 0.5px;
+}
+._InfoText {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+}
+.heartIcon {
+  width: 26px;
+  height: 24px;
+}
+.starIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  fill: yellow;
+}
+.carInfo {
+  display: flex;
+  margin-bottom: 8px;
+}
+.rating {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+  letter-spacing: 0.2px;
+  gap: 14px;
+}
+
+.infoLocationMap {
+  width: 18px;
+  height: 17px;
+  margin-right: 2px;
+}
+.infoLocation {
+  display: flex;
+  align-items: center;
+}
+.aboutCarText {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475467;
+  letter-spacing: 0.1px;
+}
+
+.showMoreBtn {
+  width: 166px;
+  padding-left: 0;
+  padding-right: 0;
+}

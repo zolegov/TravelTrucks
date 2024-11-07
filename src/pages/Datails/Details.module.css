@@ -1,0 +1,86 @@
+.detailsSection {
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
+
+.mainDetails {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+.detailsTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #101828;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+}
+.starIcon {
+  fill: #ffc531;
+  margin-right: 4px;
+}
+.rating {
+  display: flex;
+  margin-bottom: 16px;
+}
+.reviews {
+  margin-right: 16px;
+}
+.infoLocation {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.price {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #101828;
+}
+.imgContainer {
+}
+.imgContainer img {
+  display: block;
+  max-width: 292px;
+  width: 100%;
+  height: 312px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.gallaryWrapper {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 28px;
+}
+.truckDecription {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475467;
+  letter-spacing: 0.04px;
+  margin-bottom: 60px;
+}
+.featuresReviewsList {
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid #dadde1;
+}
+.featuresReviewsListItem {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #101828;
+  padding-bottom: 24px;
+  border-bottom: 5px solid #e44848;
+}
+.featuresReviewsListItem::after {
+  content: "";
+  height: 5px;
+  width: 85px;
+  background-color: #e44848;
+}
