@@ -13,10 +13,10 @@ const FlatpickrDate = ({ field, form, ...props }) => {
         {...props}
         options={{
           locale: {
-            firstDayOfWeek: 1, // Починає тиждень з понеділка
+            firstDayOfWeek: 1,
           },
         }}
-        onChange={(date) => form.setFieldValue(field.name, date[0])} // Оновлюємо значення Formik
+        onChange={(date) => form.setFieldValue(field.name, date[0])}
         placeholder="Booking date*"
         className={css.feedbackFormField}
       />

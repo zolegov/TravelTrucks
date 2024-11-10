@@ -13,7 +13,7 @@ const campersSlice = createSlice({
   },
   reducers: {
     loadMore: (state) => {
-      state.visibleItemsCount += 4; // Додаємо ще 4 елементи при кліку
+      state.visibleItemsCount += 4;
       state.hasMore = state.visibleItemsCount < state.trucks.length;
     },
     toggleFavorite: (state, action) => {
@@ -46,7 +46,6 @@ const campersSlice = createSlice({
       .addCase(getCamper.fulfilled, (state, action) => {
         state.isLoading = false;
         state.truck = action.payload;
-        // state.hasMore = state.visibleItemsCount < state.trucks.length;
       })
       .addCase(getCamper.rejected, (state) => {
         state.isLoading = false;

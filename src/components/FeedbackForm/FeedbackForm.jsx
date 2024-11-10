@@ -2,7 +2,6 @@ import { Formik, Form, Field } from "formik";
 import Button from "../Button/Button";
 import css from "./FeedbackForm.module.css";
 import emailjs from "emailjs-com";
-
 import FlatpickrDate from "../FlatpickrDate/FlatpickrDate";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
@@ -22,7 +21,7 @@ const FeedbackForm = () => {
       position: "topCenter",
       title: "Sending",
       message: "Your message is being sent...",
-      timeout: 2000, // Показуємо на короткий час, або можна використовувати `timeout: null` і закривати вручну
+      timeout: 2000,
     });
     emailjs
       .send(
