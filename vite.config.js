@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
-  base: "/TravelTrucks/",
+  base: process.env.NODE_ENV === "production" ? "/TravelTrucks/" : "/",
 });
