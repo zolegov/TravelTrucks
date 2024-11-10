@@ -28,10 +28,11 @@ const FeedbackForm = () => {
         "service_8dy41en",
         "template_s9u5mwa",
         {
-          username,
-          email,
+          to_name: "TravelTrucks",
+          from_name: username,
+          email: email,
           date: date ? date.toLocaleDateString() : "",
-          message,
+          message: message,
         },
         "Zh922BmzL0XTgdg2W"
       )
