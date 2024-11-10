@@ -64,3 +64,6 @@
   padding-left: 56px;
   padding-right: 56px;
 }
+.selected {
+  border: 1px solid #e44848;
+}

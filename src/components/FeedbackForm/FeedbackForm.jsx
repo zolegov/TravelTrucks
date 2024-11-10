@@ -4,10 +4,26 @@ import css from "./FeedbackForm.module.css";
 import emailjs from "emailjs-com";
 
 import FlatpickrDate from "../FlatpickrDate/FlatpickrDate";
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
 const FeedbackForm = () => {
   const sendEmail = (values) => {
     const { username, email, date, message } = values;
-
+    if (!username || !email || !date) {
+      iziToast.warning({
+        position: "topCenter",
+        title: "Warning",
+        message: "Please fill in all required fields.",
+      });
+      return;
+    }
+    iziToast.info({
+      position: "topCenter",
+      title: "Sending",
+      message: "Your message is being sent...",
+      timeout: 2000, // Показуємо на короткий час, або можна використовувати `timeout: null` і закривати вручну
+    });
     emailjs
       .send(
         "service_8dy41en",
@@ -21,8 +37,20 @@ const FeedbackForm = () => {
         "Zh922BmzL0XTgdg2W"
       )
       .then(
-        (result) => {},
-        (error) => {}
+        (result) => {
+          iziToast.success({
+            position: "topCenter",
+            title: "Success",
+            message: "Your message has been sent successfully!",
+          });
+        },
+        (error) => {
+          iziToast.error({
+            position: "topCenter",
+            title: "Error",
+            message: "There was an error sending your message.",
+          });
+        }
       );
   };
   return (
@@ -31,7 +59,6 @@ const FeedbackForm = () => {
       onSubmit={(values, { resetForm }) => {
         sendEmail(values);
         resetForm();
-        console.log("Submitted values:", values);
       }}
     >
       {() => (
@@ -68,4 +95,5 @@ const FeedbackForm = () => {
     </Formik>
   );
 };
+
 export default FeedbackForm;
