@@ -1,4 +1,15 @@
 .headerLogo {
   color: green;
   font-size: 24px;
+  cursor: pointer;
+}
+.logoTravel {
+  color: #101828;
+  font-size: 22px;
+  font-weight: 700;
+}
+.logoTrucks {
+  color: #475467;
+  font-size: 22px;
+  font-weight: 700;
 }

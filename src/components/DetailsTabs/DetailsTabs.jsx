@@ -29,7 +29,7 @@ const DetailsTabs = ({ truck }) => {
 
       <div className={css.tabContent}>
         {activeTab === "tab1" && <Features truck={truck} />}
-        {activeTab === "tab2" && <Reviews />}
+        {activeTab === "tab2" && <Reviews truck={truck} />}
       </div>
     </div>
   );

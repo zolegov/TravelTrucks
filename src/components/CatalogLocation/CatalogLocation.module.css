@@ -30,7 +30,6 @@
   font-weight: 400;
   font-size: 16px;
   outline: none;
-  /* line-height: 24px; */
   line-height: 1.5;
   color: #101828;
 }
@@ -44,4 +43,34 @@
   top: 50px;
   left: 20px;
   fill: #6c717b;
+}
+/* ----------------------- */
+.locationWrapper {
+  position: relative;
+}
+
+.locationInput {
+  width: 100%;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+  scrollbar-width: none;
+}
+
+.dropdownItem {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f7f7f7;
+  border-radius: 10px;
 }
