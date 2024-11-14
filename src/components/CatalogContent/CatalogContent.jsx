@@ -51,8 +51,11 @@ const CatalogContent = ({ trucks }) => {
                     <div className={css._InfoText}>
                       <div>
                         <span>€</span>
-                        <span className={css.price}>{truck.price}.00</span>
+                        <span className={css.price}>
+                          {truck.price.toFixed(2)}
+                        </span>
                       </div>
+
                       {favorites[truck.id] ? (
                         <FaRegHeart
                           className={`${css.heartIcon} ${css.favoriteHeart}`}

@@ -48,6 +48,7 @@
 .heartIcon {
   width: 26px;
   height: 24px;
+  cursor: pointer;
 }
 .favoriteHeart {
   fill: #e44848;

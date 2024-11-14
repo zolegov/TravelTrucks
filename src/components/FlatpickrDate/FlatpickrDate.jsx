@@ -15,6 +15,7 @@ const FlatpickrDate = ({ field, form, ...props }) => {
           locale: {
             firstDayOfWeek: 1,
           },
+          minDate: "today",
         }}
         onChange={(date) => form.setFieldValue(field.name, date[0])}
         placeholder="Booking date*"
