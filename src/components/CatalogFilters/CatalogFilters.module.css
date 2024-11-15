@@ -1,5 +1,5 @@
 .catalogFilters {
-  width: 365px;
+  min-width: 365px;
 }
 .filterSearchBtn {
   padding-left: 58px;

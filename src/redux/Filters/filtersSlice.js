@@ -32,10 +32,10 @@ const filtersSlice = createSlice({
     resetFilters: (state) => {
       state.location = "";
       state.equipment = {};
-      state.vehicleType = "";
+      state.form = "";
       localStorage.removeItem("location");
       localStorage.removeItem("equipment");
-      localStorage.removeItem("vehicleType");
+      localStorage.removeItem("form");
     },
   },
 });
