@@ -5,7 +5,7 @@ import CatalogFilterParams from "../CatalogFilterParams/CatalogFilterParams";
 import css from "./CatalogFilters.module.css";
 import { selectFilters } from "../../redux/Filters/selectors";
 
-const CatalogFilters = ({ onSearch }) => {
+const CatalogFilters = ({ onSearch, onReset }) => {
   const filters = useSelector(selectFilters);
 
   const handleSearchClick = () => {
@@ -18,6 +18,9 @@ const CatalogFilters = ({ onSearch }) => {
       <CatalogFilterParams />
       <Button className={css.filterSearchBtn} onClick={handleSearchClick}>
         Search
+      </Button>
+      <Button className={css.filterSearchBtn} onClick={onReset}>
+        Reset
       </Button>
     </div>
   );

@@ -10,6 +10,7 @@ import { selectFilters } from "../../redux/Filters/selectors.js";
 import { clearTrucks } from "../../redux/Campers/slice";
 
 import { throttle } from "lodash";
+import { resetFilters } from "../../redux/Filters/filtersSlice.js";
 
 const throttledGetCampers = throttle((dispatch, filters) => {
   dispatch(getCampers(filters));
@@ -19,6 +20,7 @@ const Catalog = () => {
   const dispatch = useDispatch();
   const trucks = useSelector(selectTrucks);
   const filters = useSelector(selectFilters);
+  console.log("filters: ", filters);
 
   const vehicleTypeMapping = {
     Van: "panelTruck",
@@ -50,12 +52,14 @@ const Catalog = () => {
       });
     }
   };
-
+  const handleReset = () => {
+    dispatch(resetFilters());
+  };
   return (
     <section className={css.catalogSection}>
       <Container>
         <div className={css.wrapper}>
-          <CatalogFilters onSearch={handleSearch} />
+          <CatalogFilters onSearch={handleSearch} onReset={handleReset} />
           <CatalogContent trucks={trucks} />
         </div>
       </Container>
